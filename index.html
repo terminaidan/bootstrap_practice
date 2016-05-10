@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   </head>
-  <body>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
 <!-- Navigation -->
 <!-- /* navigation outside of the container so that it streth the whole width of the page */ -->
     <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
@@ -42,7 +42,7 @@
           <p class="lead">A One-day Conference About All Things JavaScript</p>
 
             <div class="btn-group m-t-2" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-primary btn-lg">Reigster Now</button>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Reigster Now</button>
               <a class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
             </div>
 
@@ -55,7 +55,7 @@
      <div class="container p-t-2">
 
 <!-- About -->
-        <div class="row">
+        <div id="about" class="row">
             <div class="col-lg-4 col-lg-push-4">
               <h3 class="m-b-2">About Full Stack Conf</h3>
               <img class="m-b-1 img-fluid img-rounded hidden-xs-down" src="img/img_001.jpg" alt="Portland">
@@ -172,7 +172,7 @@
 <!-- / Speakers -->
 
 <!-- Schedule -->
-            <h1 class="display-2 text-xs-center m-y-3 text-muted">Schedule</h1>
+            <h1 id="schedule" class="display-2 text-xs-center m-y-3 text-muted">Schedule</h1>
             
               <ul class="list-group">
 
@@ -222,7 +222,7 @@
 
 <!-- Call out button -->
 
-          <button type="button" class="btn btn-info-outline btn-lg center-block m-y-3">Don't Miss Out, Register Now!</button>
+          <button type="button" class="btn btn-info-outline btn-lg center-block m-y-3" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now!</button>
 
 <!-- /Call out button -->
 
@@ -285,6 +285,34 @@
 <!-- /footer -->
      </div>
 <!-- / Container -->
+
+<!-- sign up form -->
+
+    <!--=====================================================         
+                          FORM MODAL
+    ======================================================-->
+
+      <div id ="register" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">Register for Full Stack Conf</h4>
+            </div>
+            <div class="modal-body">
+              <p>Form Goes Here</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+<!-- /sign up form -->
 
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
