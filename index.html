@@ -291,19 +291,26 @@
     <!--=====================================================
                           FORM MODAL
     ======================================================-->
-
+<!-- Modal Header Title -->
       <div id ="register" class="modal fade">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header bg-info">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
               <h4 class="modal-title">Register for Full Stack Conf</h4>
             </div>
             <div class="modal-body">
+<!-- /Model Header Title -->
 <!-- Registeration Form -->
-
+<!-- Basic Info -->
+              <div class="alert alert-warning alert-dismissable fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <strong>Hurry!</strong> Early Bird registration ends in 2 days.
+              </div>
               <form>
                 <h5 class="m-b-2">Basic Info</h5>
                 <fieldset class="form-group">
@@ -316,16 +323,108 @@
                 </fieldset>
                 <fieldset class="form-group">
                   <label for="role">Job Role:</label>
-                  <select class="form-control" id="role" name="user_role">
+                  <select class="c-select form-control" id="role" name="user_role">
                     <option value="full stack js developer">Full Stack JS Developer</option>
                     <option value="front end developer">Front End Developer</option>
                     <option value="back end developer">Back End Developer</option>
-                    <option value="designer">Desiger</option>
+                    <option value="designer">Designer</option>
                     <option value="student">Student</option>
-
                   </select>
-
                 </fieldset>
+<!-- /Basic Info -->
+<!-- Intrests -->
+                <hr class="m-y-2">
+                <h5 class="m-b-2">Which Topics Interest You Most?</h5>
+
+                <div class="form-group c-inputs-stacked">
+                  <label class="c-input c-checkbox">
+                    <input type="checkbox">
+                    <span class="c-indicator"></span>
+                    JavaScript Frameworks
+                  </label>
+                  <label class="c-input c-checkbox">
+                    <input type="checkbox">
+                    <span class="c-indicator"></span>
+                    JavaScript Libraries
+                  </label>
+                  <label class="c-input c-checkbox">
+                    <input type="checkbox">
+                    <span class="c-indicator"></span>
+                    Node.js
+                  </label>
+                  <label class="c-input c-checkbox">
+                    <input type="checkbox">
+                    <span class="c-indicator"></span>
+                    Build Tools
+                  </label>
+                  <label class="c-input c-checkbox">
+                    <input type="checkbox">
+                    <span class="c-indicator"></span>
+                    ES2015
+                  </label>
+
+                </div>
+<!-- /Intrests -->
+<!-- Payment info -->
+
+                <hr class="m-b-2">
+                <h5 class="m-b-2">Payment Info</h5>
+
+                <div class="row">
+                  <div class="col-lg-6 form-group">
+                    <label class="sr-only" for="cc-num">Card Number:</label>
+                    <input class="form-control" id="cc-num" placeholder="Card Number:" type="text">
+                  </div>
+
+                  <div class="col-lg-3 form-group">
+                    <label class="sr-only" for="post-code">Post Code:</label>
+                    <input class="form-control" id="post-code" placeholder="Post Code:" type="text">
+                  </div>
+
+                  <div class="col-lg-3 form-group">
+                    <label class="sr-only" for="cvv">CVV:</label>
+                    <input class="form-control" id="cvv" placeholder="CVV:" type="text">
+                  </div>
+                </div>
+<!-- Expiration date -->
+                <div class="row">
+                  <label class="col-lg-12">Experiation Date</label>
+                  <div class="col-lg-8 form-group">
+                    <select class="c-select form-control" id="exp-month">
+                      <option value="1">1 - January</option>
+                      <option value="2">2 - February</option>
+                      <option value="3">3 - March</option>
+                      <option value="4">4 - April</option>
+                      <option value="5">5 - May</option>
+                      <option value="6">6 - June</option>
+                      <option value="7">7 - July</option>
+                      <option value="8">8 - August</option>
+                      <option value="9">9 - September</option>
+                      <option value="10">10 - October</option>
+                      <option value="11">11 - November</option>
+                      <option value="12">12 - December</option>
+                    </select>
+
+                  </div>
+                  <div class="col-lg-4 form-group">
+                    <select class="c-select form-control" id="exp-year">
+                      <option value="2016">2016</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                    </select>
+                  </div>
+                </div>
+<!--/Expiration date -->
+
+<!-- /Payment info -->
+<!-- confirmation Buttons -->
+
+              <hr class="m-b-2">
+              <button type="submit" class="btn btn-primary btn-lg">Register</button>
+
+<!-- confirmation Buttons -->
               </form>
 
 <!-- /Registration Form -->
