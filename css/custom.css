@@ -1,0 +1,27 @@
+.navbar .navbar-brand {
+  color: rgba(255, 255, 255, .85);
+  font-size: 1rem;
+  padding-top: .45rem;
+}
+
+.jumbotron {
+  background: url('../img/img_001.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.btn ,
+.active {
+  transition: .4s;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}

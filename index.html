@@ -8,6 +8,9 @@
     <title>Full Stack Conf</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+<!-- Custom css -->
+    <link rel="stylesheet" href="css/custom.css">
+
   </head>
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
 <!-- Navigation -->
@@ -36,8 +39,8 @@
 
 <!-- Jumbotron (hero banner) -->
 
-      <div class="jumbotron jumbotron-fluid bg-info">
-        <div class="container text-sm-center p-t-3">
+      <div class="jumbotron jumbotron-fluid bg-info vertical-center">
+        <div class="container text-xs-center p-t-3">
           <h1 class="display-2">Full Stack Conf</h1>
           <p class="lead">A One-day Conference About All Things JavaScript</p>
 
@@ -317,9 +320,9 @@
                   <label class="sr-only" for="name">Name:</label>
                   <input type="text" class="form-control" id="name" placeholder="Name">
                 </fieldset>
-                <fieldset class="form-group">
-                  <label class="sr-only" for="mail">Email:</label>
-                  <input type="email" class="form-control" id="mail" placeholder="Email Address">
+                <fieldset class="form-group has-danger">
+                  <label class="sr-only form-control" for="mail">Email:</label>
+                  <input type="email" class="form-control form-control-danger" id="mail" placeholder="Email Address">
                 </fieldset>
                 <fieldset class="form-group">
                   <label for="role">Job Role:</label>
@@ -371,9 +374,9 @@
                 <h5 class="m-b-2">Payment Info</h5>
 
                 <div class="row">
-                  <div class="col-lg-6 form-group">
+                  <div class="col-lg-6 form-group has-success">
                     <label class="sr-only" for="cc-num">Card Number:</label>
-                    <input class="form-control" id="cc-num" placeholder="Card Number:" type="text">
+                    <input class="form-control form-control-success" id="cc-num" placeholder="Card Number:" type="text">
                   </div>
 
                   <div class="col-lg-3 form-group">
